@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Radius of a circle</title>
+<script>
+
+function incrementcounter()
+{
+var count=0;
+return function()
+{
+return ++count;
+};
+};
+ var counterfunc=incrementcounter();
+function cal()
+{
+var c=counterfunc();
+document.getElementById("ans").innerHTML = "<p> incremented value =" + c;
+
+}
+
+</script>
+</head>
+
+<body>
+<section><p> <button onclick="cal()">Click to increment a number by 1</button></p></section>
+<div id="ans"><p> incremented value = 0</div>
+
+</body>
+
+</html>
